@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Juan Leon
+security
+.vscode
+PythonData
+envname
