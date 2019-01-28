@@ -94,6 +94,15 @@ def airecruiter():
                         for idea_response in actions_used_by_recruiter() :
                             gather.say(idea_response, voice= 'alice')
 
+                    elif (len(message['output']['intents']) > 0):
+
+                        for intern_intent in message['output']['intents'] :
+
+                            if intern_intent["intent"] == "No" or intern_intent["intent"] == "General_Ending":
+                                twilio_response.say(intern_response['text'], voice= 'alice')
+                                gather.pause(2)
+                                twilio_response.hangup()
+
                     else:
                         gather.say(intern_response['text'], voice= 'alice')
             
