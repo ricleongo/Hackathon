@@ -1,0 +1,743 @@
+{
+  "name": "Hackaton Jan 2019 1.2",
+  "intents": [
+    {
+      "intent": "candidates_grow_per_month",
+      "examples": [
+        {
+          "text": "Let me hear the candidates grow this month"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "newUserInfo",
+      "examples": [
+        {
+          "text": "email is trainingwatson@ibm.com username is Watson",
+          "mentions": [
+            {
+              "entity": "userEmail",
+              "location": [
+                9,
+                31
+              ]
+            },
+            {
+              "entity": "userName",
+              "location": [
+                44,
+                50
+              ]
+            }
+          ]
+        },
+        {
+          "text": "name is Precious and email is Precious.cool@yahoo.com",
+          "mentions": [
+            {
+              "entity": "userName",
+              "location": [
+                8,
+                16
+              ]
+            },
+            {
+              "entity": "userEmail",
+              "location": [
+                30,
+                53
+              ]
+            }
+          ]
+        },
+        {
+          "text": "the name is peter and the email is petethegreat@testpeterson.com",
+          "mentions": [
+            {
+              "entity": "userName",
+              "location": [
+                12,
+                17
+              ]
+            },
+            {
+              "entity": "userEmail",
+              "location": [
+                35,
+                64
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Email is thisisatest@gmail.com and the name is thisIsATest.new",
+          "mentions": [
+            {
+              "entity": "userEmail",
+              "location": [
+                9,
+                30
+              ]
+            },
+            {
+              "entity": "userName",
+              "location": [
+                47,
+                62
+              ]
+            }
+          ]
+        },
+        {
+          "text": "email is Personified.Tester3@careerbuilder.com and user is Personified",
+          "mentions": [
+            {
+              "entity": "userEmail",
+              "location": [
+                9,
+                46
+              ]
+            },
+            {
+              "entity": "userName",
+              "location": [
+                59,
+                70
+              ]
+            }
+          ]
+        },
+        {
+          "text": "emails is john.doe@careerbuilder.com and user is John",
+          "mentions": [
+            {
+              "entity": "userEmail",
+              "location": [
+                10,
+                36
+              ]
+            },
+            {
+              "entity": "userName",
+              "location": [
+                49,
+                53
+              ]
+            }
+          ]
+        },
+        {
+          "text": "user is Nestor and email is nestor.manuel@careerbuildertest.com",
+          "mentions": [
+            {
+              "entity": "userName",
+              "location": [
+                8,
+                14
+              ]
+            },
+            {
+              "entity": "userEmail",
+              "location": [
+                28,
+                63
+              ]
+            }
+          ]
+        },
+        {
+          "text": "name is Juan and email is juan@hotmail.com",
+          "mentions": [
+            {
+              "entity": "userName",
+              "location": [
+                8,
+                12
+              ]
+            },
+            {
+              "entity": "userEmail",
+              "location": [
+                26,
+                42
+              ]
+            }
+          ]
+        },
+        {
+          "text": "email is pedrojose@hotmail.com and the user is Pedro",
+          "mentions": [
+            {
+              "entity": "userEmail",
+              "location": [
+                9,
+                30
+              ]
+            },
+            {
+              "entity": "userName",
+              "location": [
+                47,
+                52
+              ]
+            }
+          ]
+        },
+        {
+          "text": "user is Guaido email is guaidoisthepresident@venezuela.com",
+          "mentions": [
+            {
+              "entity": "userName",
+              "location": [
+                8,
+                14
+              ]
+            },
+            {
+              "entity": "userEmail",
+              "location": [
+                24,
+                58
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Name is John and email is john@gmail.com",
+          "mentions": [
+            {
+              "entity": "userName",
+              "location": [
+                8,
+                12
+              ]
+            },
+            {
+              "entity": "userEmail",
+              "location": [
+                26,
+                40
+              ]
+            }
+          ]
+        },
+        {
+          "text": "The email is rebecca@gmail.com and the user's name is Rebecca",
+          "mentions": [
+            {
+              "entity": "userEmail",
+              "location": [
+                13,
+                30
+              ]
+            },
+            {
+              "entity": "userName",
+              "location": [
+                54,
+                61
+              ]
+            }
+          ]
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "most_viewed_resumes_by_recruiter",
+      "examples": [
+        {
+          "text": "Can you tell me the most view resumes"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "available_licenses",
+      "examples": [
+        {
+          "text": "What licenses are available?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "most_used_actions_by_recruiter",
+      "examples": [
+        {
+          "text": "Please tell me the most used actions by recruiters"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "tips",
+      "examples": [
+        {
+          "text": "how can you help me?"
+        },
+        {
+          "text": "how do you work?"
+        },
+        {
+          "text": "give me a tip"
+        },
+        {
+          "text": "what can you do?"
+        },
+        {
+          "text": "give me a hint"
+        },
+        {
+          "text": "what are the instructions?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "userName",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "John",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rebecca",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Precious",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "peter",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "thisIsATest.new",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Personified",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Nestor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Juan",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pedro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Guaido",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Watson",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "userEmail",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "guaidoisthepresident@venezuela.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "trainingwatson@ibm.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "email@emailtest.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "a.b@c.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "a@a.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "john@gmail.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "rebecca@gmail.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "petethegreat@testpeterson.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Precious.cool@yahoo.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "thisisatest@gmail.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Personified.Tester3@careerbuilder.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "john.doe@careerbuilder.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "nestor.manuel@careerbuildertest.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pedrojose@hotmail.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "juan@hotmail.com",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_25_1548464115540",
+      "event_name": "focus",
+      "dialog_node": "handler_27_1548464115540",
+      "previous_sibling": "handler_26_1548464115540"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_25_1548464115540",
+      "context": {
+        "userEmail": "@userEmail"
+      },
+      "conditions": "@userEmail",
+      "event_name": "input",
+      "dialog_node": "handler_26_1548464115540"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "parent": "node_1_1548477282709",
+      "metadata": {},
+      "dialog_node": "node_2_1548477316445"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "{availableLicenses}"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_34_1548473495965",
+      "metadata": {},
+      "conditions": "#available_licenses",
+      "dialog_node": "node_37_1548474047400",
+      "previous_sibling": "node_36_1548474044280"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "{actionused}"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_34_1548473495965",
+      "metadata": {},
+      "conditions": "#most_used_actions_by_recruiter",
+      "dialog_node": "node_36_1548474044280",
+      "previous_sibling": "node_35_1548474026530"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "{resumeviewed}"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_34_1548473495965",
+      "metadata": {},
+      "conditions": "#most_viewed_resumes_by_recruiter",
+      "dialog_node": "node_35_1548474026530",
+      "previous_sibling": "node_33_1548473486162"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "{growth}"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_34_1548473495965",
+      "metadata": {},
+      "conditions": "#candidates_grow_per_month",
+      "dialog_node": "node_33_1548473486162"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_22_1548464101460",
+      "event_name": "focus",
+      "dialog_node": "handler_24_1548464101460",
+      "previous_sibling": "handler_23_1548464101460"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_22_1548464101460",
+      "context": {
+        "userName": "@userName"
+      },
+      "conditions": "@userName",
+      "event_name": "input",
+      "dialog_node": "handler_23_1548464101460"
+    },
+    {
+      "type": "slot",
+      "parent": "node_17_1548463182056",
+      "dialog_node": "slot_19_1548464099100",
+      "previous_sibling": "slot_25_1548464115540"
+    },
+    {
+      "type": "slot",
+      "parent": "node_17_1548463182056",
+      "variable": "$userEmail",
+      "dialog_node": "slot_25_1548464115540",
+      "previous_sibling": "slot_22_1548464101460"
+    },
+    {
+      "type": "slot",
+      "parent": "node_17_1548463182056",
+      "variable": "$userName",
+      "dialog_node": "slot_22_1548464101460"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_19_1548464099100",
+      "event_name": "input",
+      "dialog_node": "handler_20_1548464099100"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1548477282709"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello $userName"
+              },
+              {
+                "text": "Nice to talk to you again $userName"
+              },
+              {
+                "text": "Hey @userName"
+              },
+              {
+                "text": "Hi @userName"
+              },
+              {
+                "text": "$userName nice to talk to you"
+              },
+              {
+                "text": "Hey $userName nice to talk to you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "time": 100,
+            "typing": false,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "What can I do for you?"
+              },
+              {
+                "text": "How can I help you?"
+              },
+              {
+                "text": "What would you like to know?"
+              },
+              {
+                "text": "How can I help?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "fallback": "leave"
+      },
+      "conditions": "#newUserInfo",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_17_1548463182056",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_34_1548473495965",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "folder",
+      "title": "API Actions",
+      "metadata": {},
+      "dialog_node": "node_34_1548473495965",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "folder",
+      "title": "Tips",
+      "metadata": {},
+      "dialog_node": "node_1_1548477282709",
+      "previous_sibling": "node_17_1548463182056"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Welcome to the AI recruiter tool"
+              },
+              {
+                "text": "Hey there"
+              },
+              {
+                "text": "Hello how are you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "workspace_id": "7d117ba5-afdb-40fa-bfbb-cd14fc6c5826",
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
